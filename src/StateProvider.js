@@ -1,17 +1,14 @@
-// data layer
-// to track the basket
+import React, { createContext, useContext, useReducer } from "react";
 
-import React, { createContext, useContext, useReducer} from "react";
-
-// THIS IS DATA LAYER
+// Prepares the dataLayer
 export const StateContext = createContext();
 
-// BUILD A PROVIDER
-export const StateProvider = ({ reducer, initialState, children}) => (
-    <StateContext.Provider value={useReducer(reducer, initialState)}>
-        {children}
-    </StateContext.Provider>
+// Wrap our app and provide the Data layer
+export const StateProvider = ({ reducer, initialState, children }) => (
+  <StateContext.Provider value={useReducer(reducer, initialState)}>
+    {children}
+  </StateContext.Provider>
 );
 
-// this is to export and how we use it inside a component
+// Pull information from the data layer
 export const useStateValue = () => useContext(StateContext);
