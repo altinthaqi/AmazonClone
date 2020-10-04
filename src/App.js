@@ -10,19 +10,26 @@ import Login from './Login'
 
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{basket}, dispatch] = useStateValue();
 
+  //useEffect <<< Learn it
+  //Piece of code which runs in a given condition
+
+  useEffect(()=>{
+    
+  }, [])
+
+  
   return (
     <Router>
       <div className="app">
         <Switch>
-        <Route path="/login">
-            <Header />
-            <Login />
-          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <Header />
