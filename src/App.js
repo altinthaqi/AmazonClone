@@ -5,6 +5,7 @@ import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import { useStateValue } from "./StateProvider";
+import Login from './Login'
 
 
 
@@ -15,6 +16,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+        <Route path="/login">
+            <Header />
+            <Login />
+          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
