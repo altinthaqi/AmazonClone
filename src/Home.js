@@ -9,7 +9,6 @@ function Home() {
             />
         <div className="home__row">
         <Product 
-        id="f"
         title="iPhone 11 Pro Max (64GB, Gray)"
         price={999.99}
         rating={5}
@@ -17,7 +16,6 @@ function Home() {
         />
 
         <Product 
-        id="f"
         title="Fitbit Charge 3 Fitnes Activity Tracker"
         price={114.88}
         rating={4}
@@ -27,7 +25,6 @@ function Home() {
         
         <div className="home__row">
         <Product 
-        id="f"
         title="iHome Alexa Built-in Bluetooth Speaker Portable Wireless"
         price={59.99}
         rating={4}
@@ -35,7 +32,6 @@ function Home() {
         />
 
         <Product 
-        id="f"
         title="Home Depot Gas Power Washer"
         price={199.99}
         rating={3}
@@ -43,7 +39,6 @@ function Home() {
         />
 
         <Product 
-        id="f"
         title="Dabbawalla Bags Preschool Backpack, Vintage Flyer"
         price={42.99}
         rating={4}
@@ -51,7 +46,6 @@ function Home() {
         />
         </div>
         <Product 
-        id="f"
         title="8K Ultra HD Nano Cell Smart TV"
         price={4999.99}
         rating={5}
